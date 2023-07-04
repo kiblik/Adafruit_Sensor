@@ -20,6 +20,7 @@
 #ifndef _ADAFRUIT_SENSOR_H
 #define _ADAFRUIT_SENSOR_H
 
+#include "wiringBone/library/Arduino.h"
 #ifndef ARDUINO
 #include <stdint.h>
 #elif ARDUINO >= 100
@@ -217,8 +218,8 @@ public:
 
   void printSensorDetails(void);
 
-private:
-  bool _autoRange;
+// private:
+//   bool _autoRange;  // Raised warnings because never used
 };
 
 #endif
